@@ -1,0 +1,30 @@
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: netsecure
+      POSTGRES_USER: netsecure
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-development-only-password}
+    volumes: [netsecure-db:/var/lib/postgresql/data]
+    healthcheck: {test: ["CMD-SHELL", "pg_isready -U netsecure"], interval: 5s, timeout: 3s, retries: 10}
+  backend:
+    build: ./backend
+    environment:
+      DATABASE_URL: postgresql+psycopg://netsecure:${POSTGRES_PASSWORD:-development-only-password}@db:5432/netsecure
+      SECRET_KEY: ${SECRET_KEY:-development-only-compose-secret-change-me}
+      CORS_ORIGINS: http://localhost:5173,http://localhost:8081
+      DEMO_MODE: "true"
+      ENABLE_LIVE_CAPTURE: "false"
+    ports: ["8000:8000"]
+    depends_on:
+      db: {condition: service_healthy}
+    security_opt: [no-new-privileges:true]
+    read_only: true
+    tmpfs: [/tmp]
+  frontend:
+    build: ./frontend
+    ports: ["8081:80"]
+    depends_on: [backend]
+    security_opt: [no-new-privileges:true]
+volumes:
+  netsecure-db:

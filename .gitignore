@@ -1,0 +1,17 @@
+.env
+.venv/
+backend/.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.db
+netsecure.db
+node_modules/
+dist/
+coverage/
+*.log
+*.tsbuildinfo
+test-results/
+playwright-report/
+scratch/
+.DS_Store
