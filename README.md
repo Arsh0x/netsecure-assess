@@ -27,7 +27,7 @@ The platform is **strictly defensive**: it contains **no exploitation, credentia
 ## ✨ Key Features
 
 - **🔒 Bounded TCP-Connect Scanner**: Target normalization using Python's `ipaddress` module. Accepts only private IPv4 (RFC1918) and localhost with hard host, port, concurrency, and time ceilings.
-- **📊 Transparent 0–100 Risk Scoring Engine**: Explainable weighted risk calculation based on technical severity (30%), detection confidence (10%), asset criticality (15%), exposure (10%), likelihood (10%), and business impact (15%).
+- **📊 Transparent 0-100 Risk Scoring Engine**: Explainable weighted risk calculation based on technical severity (30%), detection confidence (10%), asset criticality (15%), exposure (10%), likelihood (10%), and business impact (15%).
 - **🏛️ 14-Category Governance Control Framework**: Informed by NIST CSF and CIS Controls (AM-01 through TP-01) with automated maturity index calculation (scale 0.0 to 5.0).
 - **📑 Automated 15-Page PDF Technical Report Generator**: Custom `fpdf2` report engine generating comprehensive, executive-ready PDF snapshots complete with cover page, TOC, asset inventories, finding deep-dives, control posture evaluations, and threat models.
 - **🌐 Privacy-Preserving Traffic Metadata Import**: Accepts PCAP/PCAPNG uploads while strictly discarding packet payloads and retaining only connection metadata.
@@ -65,25 +65,25 @@ The platform is **strictly defensive**: it contains **no exploitation, credentia
 
 The fastest way to deploy NetSecure Assess is with Docker Compose:
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/Arsh0x/netsecure-assess.git
-   cd netsecure-assess
-   ```
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Arsh0x/netsecure-assess.git
+cd netsecure-assess
+```
 
-2. **Copy Environment Variables**:
-   ```bash
-   cp .env.example .env
-   ```
+### 2. Copy Environment Variables
+```bash
+cp .env.example .env
+```
 
-3. **Build & Start Containers**:
-   ```bash
-   docker compose up --build
-   ```
+### 3. Build & Start Containers
+```bash
+docker compose up --build
+```
 
-4. **Access the Web Workspace**:
-   - **Frontend UI**: `http://localhost:8081`
-   - **FastAPI OpenAPI UI**: `http://localhost:8000/docs`
+### 4. Access the Web Workspace
+- **Frontend UI**: `http://localhost:8081`
+- **FastAPI OpenAPI UI**: `http://localhost:8000/docs`
 
 ---
 
@@ -144,7 +144,8 @@ backend/.venv/bin/python scripts/generate_pdf_report.py
 
 Output: `NetSecure_Assess_Security_Report.pdf` (in project root)
 
-### Report Structure Overview:
+### Report Structure Overview
+
 - **Page 1**: Title Cover Banner & Document Metadata
 - **Page 2**: Table of Contents & Revision Sign-offs
 - **Page 3**: Executive Summary & High-Level Metric Cards
@@ -154,7 +155,7 @@ Output: `NetSecure_Assess_Security_Report.pdf` (in project root)
 - **Page 7**: Database Schema & Entity Relationships
 - **Page 8**: REST API Endpoint Directory & JWT Security
 - **Page 9**: Discovered Asset Inventory & Exposed Services
-- **Page 10**: Vulnerability Findings & 0–100 Risk Scoring Model
+- **Page 10**: Vulnerability Findings & 0-100 Risk Scoring Model
 - **Page 11**: 14-Category Governance Control Assessment
 - **Page 12**: Traffic Metadata & Intrusion Detection Alerts
 - **Page 13**: Threat Model & Trust Boundaries
