@@ -1,4 +1,4 @@
-# 🛡️ NetSecure Assess
+# NetSecure Assess
 
 > **Educational Network Security & Governance Workspace**
 >
@@ -16,7 +16,7 @@
 
 ---
 
-## 📋 Overview
+## Overview
 
 **NetSecure Assess** is designed for university students, cybersecurity researchers, and defensive analysts to learn network security posture assessment, risk scoring, and governance compliance in a safe, controlled environment.
 
@@ -24,19 +24,19 @@ The platform is **strictly defensive**: it contains **no exploitation, credentia
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-- 🔒 **Bounded TCP-Connect Scanner**: Target normalization using Python's `ipaddress` module. Accepts only private IPv4 (RFC1918) and localhost with hard host, port, concurrency, and time ceilings.
-- 📊 **Transparent 0-100 Risk Scoring Engine**: Explainable weighted risk calculation based on technical severity (30%), detection confidence (10%), asset criticality (15%), exposure (10%), likelihood (10%), and business impact (15%).
-- 🏛️ **14-Category Governance Control Framework**: Informed by NIST CSF and CIS Controls (AM-01 through TP-01) with automated maturity index calculation (scale 0.0 to 5.0).
-- 📑 **Automated 15-Page PDF Technical Report Generator**: Custom `fpdf2` report engine generating comprehensive, executive-ready PDF snapshots complete with cover page, TOC, asset inventories, finding deep-dives, control posture evaluations, and threat models.
-- 🌐 **Privacy-Preserving Traffic Metadata Import**: Accepts PCAP/PCAPNG uploads while strictly discarding packet payloads and retaining only connection metadata.
-- 🚨 **Explainable Intrusion Alerts**: Constrained JSON rule detection engine for cleartext protocols and connection bursts.
-- ⚡ **Modern Full-Stack Architecture**: React 19 SPA + TypeScript + Vite frontend coupled with a FastAPI + SQLAlchemy backend API.
+- **Bounded TCP-Connect Scanner**: Target normalization using Python's `ipaddress` module. Accepts only private IPv4 (RFC1918) and localhost with hard host, port, concurrency, and time ceilings.
+- **Transparent 0-100 Risk Scoring Engine**: Explainable weighted risk calculation based on technical severity (30%), detection confidence (10%), asset criticality (15%), exposure (10%), likelihood (10%), and business impact (15%).
+- **14-Category Governance Control Framework**: Informed by NIST CSF and CIS Controls (AM-01 through TP-01) with automated maturity index calculation (scale 0.0 to 5.0).
+- **Automated 15-Page PDF Technical Report Generator**: Custom `fpdf2` report engine generating comprehensive, executive-ready PDF snapshots complete with cover page, TOC, asset inventories, finding deep-dives, control posture evaluations, and threat models.
+- **Privacy-Preserving Traffic Metadata Import**: Accepts PCAP/PCAPNG uploads while strictly discarding packet payloads and retaining only connection metadata.
+- **Explainable Intrusion Alerts**: Constrained JSON rule detection engine for cleartext protocols and connection bursts.
+- **Modern Full-Stack Architecture**: React 19 SPA + TypeScript + Vite frontend coupled with a FastAPI + SQLAlchemy backend API.
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```text
                ┌───────────────────────────────────────────┐
@@ -61,7 +61,7 @@ The platform is **strictly defensive**: it contains **no exploitation, credentia
 
 ---
 
-## 🚀 Quick Start (Docker Compose)
+## Quick Start (Docker Compose)
 
 The fastest way to deploy NetSecure Assess is with Docker Compose:
 
@@ -87,7 +87,7 @@ docker compose up --build
 
 ---
 
-## 💻 Local Development Setup
+## Local Development Setup
 
 ### Backend (Python 3.12+)
 
@@ -121,7 +121,7 @@ npm run dev
 
 ---
 
-## 🔑 Demo Access Credentials
+## Demo Access Credentials
 
 When starting in development mode (`DEMO_MODE=true`), the system auto-seeds an in-memory laboratory project (`Campus Lab Baseline` on `10.20.0.0/24`) with four simulated assets and initial security observations:
 
@@ -133,7 +133,7 @@ When starting in development mode (`DEMO_MODE=true`), the system auto-seeds an i
 
 ---
 
-## 📄 Generating the 15-Page Technical PDF Report
+## Generating the 15-Page Technical PDF Report
 
 NetSecure Assess includes an automated, self-contained Python script to generate an exhaustive **15-page security & system report**:
 
@@ -164,7 +164,7 @@ Output: `NetSecure_Assess_Security_Report.pdf` (in project root)
 
 ---
 
-## 🛡️ Safety Ceilings & Defensive Policy
+## Safety Ceilings & Defensive Policy
 
 To prevent unintended scanning or network disruption, NetSecure Assess enforces strict server-side ceilings:
 
@@ -179,7 +179,7 @@ To prevent unintended scanning or network disruption, NetSecure Assess enforces 
 
 ---
 
-## 🧪 Testing & Verification
+## Testing & Verification
 
 Run backend unit, API, permission, and target safety tests:
 
@@ -205,7 +205,7 @@ npm run test:e2e
 
 ---
 
-## 📜 License & Disclaimer
+## License & Disclaimer
 
 Distributed under the **MIT License**. See `LICENSE` for details.
 
