@@ -32,7 +32,7 @@ The platform is **strictly defensive**: it contains **no exploitation, credentia
 - **📑 Automated 15-Page PDF Technical Report Generator**: Custom `fpdf2` report engine generating comprehensive, executive-ready PDF snapshots complete with cover page, TOC, asset inventories, finding deep-dives, control posture evaluations, and threat models.
 - **🌐 Privacy-Preserving Traffic Metadata Import**: Accepts PCAP/PCAPNG uploads while strictly discarding packet payloads and retaining only connection metadata.
 - **🚨 Explainable Intrusion Alerts**: Constrained JSON rule detection engine for cleartext protocols and connection bursts.
-- **⚡ Modern Full-Stack Stack**: React 19 SPA + TypeScript + Vite frontend coupled with a FastAPI + SQLAlchemy backend API.
+- **⚡ Modern Full-Stack Architecture**: React 19 SPA + TypeScript + Vite frontend coupled with a FastAPI + SQLAlchemy backend API.
 
 ---
 
@@ -200,37 +200,6 @@ Run Playwright browser E2E smoke tests:
 cd frontend
 npx playwright install chromium
 npm run test:e2e
-```
-
----
-
-## 📤 How to Upload to GitHub
-
-Follow these steps to initialize and push this workspace to your GitHub repository:
-
-```bash
-# 1. Initialize Git repository
-git init
-
-# 2. Add files to staging
-git add .
-
-# 3. Create initial commit
-git commit -m "feat: initial commit of NetSecure Assess workspace with 15-page PDF report generator"
-
-# 4. Rename branch to main
-git branch -M main
-
-# 5. Link your GitHub remote repository
-git remote add origin https://github.com/Arsh0x/netsecure-assess.git
-
-# 6. Push code to GitHub
-git push -u origin main
-```
-
-*Alternatively, if you have the GitHub CLI (`gh`) installed:*
-```bash
-gh repo create netsecure-assess --public --source=. --remote=origin --push
 ```
 
 ---
