@@ -67,7 +67,7 @@ The fastest way to deploy NetSecure Assess is with Docker Compose:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/netsecure-assess.git
+   git clone https://github.com/Arsh0x/netsecure-assess.git
    cd netsecure-assess
    ```
 
@@ -222,7 +222,7 @@ git commit -m "feat: initial commit of NetSecure Assess workspace with 15-page P
 git branch -M main
 
 # 5. Link your GitHub remote repository
-git remote add origin https://github.com/YOUR_USERNAME/netsecure-assess.git
+git remote add origin https://github.com/Arsh0x/netsecure-assess.git
 
 # 6. Push code to GitHub
 git push -u origin main
