@@ -26,13 +26,13 @@ The platform is **strictly defensive**: it contains **no exploitation, credentia
 
 ## ✨ Key Features
 
-- **🔒 Bounded TCP-Connect Scanner**: Target normalization using Python's `ipaddress` module. Accepts only private IPv4 (RFC1918) and localhost with hard host, port, concurrency, and time ceilings.
-- **📊 Transparent 0-100 Risk Scoring Engine**: Explainable weighted risk calculation based on technical severity (30%), detection confidence (10%), asset criticality (15%), exposure (10%), likelihood (10%), and business impact (15%).
-- **🏛️ 14-Category Governance Control Framework**: Informed by NIST CSF and CIS Controls (AM-01 through TP-01) with automated maturity index calculation (scale 0.0 to 5.0).
-- **📑 Automated 15-Page PDF Technical Report Generator**: Custom `fpdf2` report engine generating comprehensive, executive-ready PDF snapshots complete with cover page, TOC, asset inventories, finding deep-dives, control posture evaluations, and threat models.
-- **🌐 Privacy-Preserving Traffic Metadata Import**: Accepts PCAP/PCAPNG uploads while strictly discarding packet payloads and retaining only connection metadata.
-- **🚨 Explainable Intrusion Alerts**: Constrained JSON rule detection engine for cleartext protocols and connection bursts.
-- **⚡ Modern Full-Stack Architecture**: React 19 SPA + TypeScript + Vite frontend coupled with a FastAPI + SQLAlchemy backend API.
+- 🔒 **Bounded TCP-Connect Scanner**: Target normalization using Python's `ipaddress` module. Accepts only private IPv4 (RFC1918) and localhost with hard host, port, concurrency, and time ceilings.
+- 📊 **Transparent 0-100 Risk Scoring Engine**: Explainable weighted risk calculation based on technical severity (30%), detection confidence (10%), asset criticality (15%), exposure (10%), likelihood (10%), and business impact (15%).
+- 🏛️ **14-Category Governance Control Framework**: Informed by NIST CSF and CIS Controls (AM-01 through TP-01) with automated maturity index calculation (scale 0.0 to 5.0).
+- 📑 **Automated 15-Page PDF Technical Report Generator**: Custom `fpdf2` report engine generating comprehensive, executive-ready PDF snapshots complete with cover page, TOC, asset inventories, finding deep-dives, control posture evaluations, and threat models.
+- 🌐 **Privacy-Preserving Traffic Metadata Import**: Accepts PCAP/PCAPNG uploads while strictly discarding packet payloads and retaining only connection metadata.
+- 🚨 **Explainable Intrusion Alerts**: Constrained JSON rule detection engine for cleartext protocols and connection bursts.
+- ⚡ **Modern Full-Stack Architecture**: React 19 SPA + TypeScript + Vite frontend coupled with a FastAPI + SQLAlchemy backend API.
 
 ---
 
